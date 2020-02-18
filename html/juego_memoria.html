@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Juego de memoria</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="../js/lib/jquery.js"></script>
+    <script src="../js/juegoMemoria.js"></script>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+
+    <h1>Leandro`s Memory Game</h1>
+    <select id="desplegable">
+        <option value="">Seleccione nivel</option>
+        <option value="2x3">Bajo</option>
+        <option value="3x4">Medio</option>
+        <option value="5x4">Alto</option>
+    </select>
+    <button id="btn">Aceptar</button>
+
+    <table id="tabla">
+    </table>
+
+    <div class="datos">
+        <span>Tiempo: <span id="tiempo">00:00</span><br>
+            <span>Número de intentos: <span id="intentos">0</span></span>
+    </div>
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>¡Felicidades!</h2>
+            <div class="content">
+                <span>Tiempo: <span id="tiempo-info"></span><br>
+                <span>Número de intentos: <span id="intentos-info"></span></span>
+            </div>
+            <button id="btn-popup">Aceptar</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
